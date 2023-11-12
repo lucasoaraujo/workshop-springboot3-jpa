@@ -1,3 +1,4 @@
+// Controlador REST para manipular operações relacionadas a usuários
 package com.devlucasboaraujo.course.resources;
 
 import org.springframework.http.ResponseEntity;
@@ -11,6 +12,7 @@ import com.devlucasboaraujo.course.entitties.User;
 @RequestMapping(value = "/users")
 public class UserResource {
 	
+	// Mapeia solicitações HTTP GET para este método
     @GetMapping
 	public ResponseEntity<User> findAll() {
 		
